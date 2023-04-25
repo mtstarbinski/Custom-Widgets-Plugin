@@ -1,0 +1,23 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "wordpress-plus/search-form",
+    "title": "Search Form",
+    "category": "widgets",
+    "description": "Adds a search form",
+    "keywords": ["search form"],
+    "version": "1",
+    "textdomain": "wordpress-plus",
+    "editorScript": "file:./index.js",
+    "style": "file:./index.css",
+    "attributes": {
+        "bgColor": {
+            "type": "string",
+            "default": "#f87171"
+        },
+        "textColor": {
+            "type": "string",
+            "default": "#fff"
+        }
+    }
+}
