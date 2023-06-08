@@ -1,7 +1,11 @@
 <?php
 
 function wp_auth_modal_render_cb($attributes) {
-    ob_start();
+  if(is_user_logged_in()) {
+    return '';
+  }  
+  
+  ob_start();
     ?>
     <div class="wp-block-wordpress-plus-auth-modal">
   <div class="modal-container">

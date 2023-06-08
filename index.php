@@ -36,3 +36,4 @@ foreach($allFiles as $filename){
 add_action( 'init', "wp_register_blocks" );
 add_action( 'rest_api_init', 'up_rest_api_init' );
 add_action( 'wp_enqueue_scripts', 'up_enqueue_scripts' );
+add_action( 'init', 'wp_recipe_post_type');
